@@ -29,6 +29,10 @@ def create_app(env: str):
             'status': 401,
             'message': 'The token has expired'
         }), 401
-
+    @app.route("/")
+    def index():
+        return jsonify({
+            "message": "API Connected successfully."
+        })
     return app
     

@@ -29,6 +29,7 @@ python unittest module does not support arbitrary names in test files. by defaul
 
 so, auth.spec.py fails to execute and pass the test
 
+use this instead to test.
 ```
 python3 -m unittest discover -v tests 
 ```

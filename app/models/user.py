@@ -100,6 +100,13 @@ class User(db.Model):
                 "message": message
             }
             errors.append(response)
+        if self.email:
+            user = User.query.filter_by(email=self.email).first()
+            if user:
+                errors.append({
+                    "field": "email",
+                    "message": "User already exist with this email address"
+                })
 
         return errors
     

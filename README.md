@@ -44,7 +44,7 @@ flask run
 [POST] /auth/login : logs in a user. When you log in, you can select an organisation to interact with
 
 * Login request body:
-````
+```
 {
 	"email": "string",
 	"password": "string",

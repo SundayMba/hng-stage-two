@@ -50,3 +50,12 @@ flask run
 	"password": "string",
 }
 ```
+
+## TESTING
+python unittest module does not support arbitrary names in test files. by default, all test file's name start with test_filename.
+
+so, auth.spec.py fails to execute and pass the test
+
+```
+python3 -m unittest discover -v tests 
+```
